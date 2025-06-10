@@ -115,3 +115,9 @@ footer a {
 footer a:hover {
   color: #ffdd57;
 }
+
+.logo {
+  width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
