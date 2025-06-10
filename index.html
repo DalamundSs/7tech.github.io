@@ -3,80 +3,128 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>7TECH - パソコン組み立て代行</title>
+  <title>7TECH | パソコン組み立て代行</title>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #f8f9fa;
-      color: #333;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Noto Sans JP', sans-serif;
+    }
+    body {
+      background-color: #0a1b2a;
+      color: #ffffff;
+      line-height: 1.6;
     }
     header {
-      background-color: #0a192f;
-      color: white;
-      padding: 2rem 1rem;
       text-align: center;
+      padding: 40px 20px 20px;
+    }
+    header img {
+      height: 40px;
     }
     header h1 {
-      font-size: 2.5rem;
-      margin: 0;
+      font-size: 32px;
+      margin: 10px 0;
     }
     header p {
-      font-size: 1.2rem;
-      margin-top: 0.5rem;
+      font-size: 16px;
+      color: #cdd9e5;
     }
-    .highlight {
-      background-color: #112240;
-      color: #64ffda;
-      padding: 2rem 1rem;
+    .hero {
       text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(to bottom, #0a1b2a, #0f2c40);
     }
-    .highlight h2 {
-      font-size: 2rem;
+    .hero h2 {
+      font-size: 28px;
+      margin-bottom: 16px;
     }
-    .highlight p {
-      font-size: 1.2rem;
-      margin-top: 1rem;
+    .hero p {
+      font-size: 16px;
+      margin-bottom: 30px;
     }
-    .cta {
-      margin: 2rem 0;
-      text-align: center;
-    }
-    .cta a {
+    .cta-button {
       background-color: #06c755;
-      color: white;
-      padding: 1rem 2rem;
-      border-radius: 8px;
+      color: #ffffff;
+      padding: 14px 28px;
+      font-size: 16px;
       text-decoration: none;
-      font-size: 1.1rem;
+      border-radius: 8px;
+      display: inline-block;
+    }
+    .services {
+      padding: 60px 20px;
+      background-color: #0f2c40;
+      text-align: center;
+    }
+    .services h3 {
+      font-size: 24px;
+      margin-bottom: 40px;
+    }
+    .service-items {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 40px;
+    }
+    .service-item {
+      max-width: 240px;
+    }
+    .service-item img {
+      height: 48px;
+      margin-bottom: 16px;
+    }
+    .service-item h4 {
+      font-size: 18px;
+      margin-bottom: 8px;
     }
     footer {
-      background-color: #0a192f;
-      color: #ccc;
+      background-color: #06101a;
+      padding: 20px;
       text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
+      font-size: 12px;
+      color: #aaaaaa;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="images/7HECH.JP.png" alt="7TECHロゴ" class="logo">
+    <img src="logo.png" alt="7TECHロゴ">
     <h1>7TECH</h1>
     <p>あなただけの理想のパソコンを、一緒にカタチにします</p>
   </header>
 
-  <section class="highlight">
+  <section class="hero">
     <h2>パソコン組み立て代行サービス</h2>
-    <p>用途・予算・サイズに合わせた<br />完全オーダーメイドでのパソコン製作</p>
+    <p>用途・予算・サイズに合わせた<br>完全オーダーメイドでのパソコン製作</p>
+    <a href="https://lin.ee/Qn8tyia" class="cta-button" target="_blank">LINEで無料相談する</a>
   </section>
 
-  <section class="cta">
-    <a href="https://lin.ee/Qn8tyia" target="_blank">LINEで無料相談する</a>
+  <section class="services">
+    <h3>サービス内容</h3>
+    <div class="service-items">
+      <div class="service-item">
+        <img src="icon-hearing.png" alt="ヒアリング">
+        <h4>ヒアリング</h4>
+        <p>使用目的や予算まで丁寧にヒアリング</p>
+      </div>
+      <div class="service-item">
+        <img src="icon-assemble.png" alt="組立て">
+        <h4>パーツ選定・組立て</h4>
+        <p>適切な構成で丁寧にパーツを組み立て</p>
+      </div>
+      <div class="service-item">
+        <img src="icon-support.png" alt="サポート">
+        <h4>発送・設置サポート</h4>
+        <p>完成したPCをしっかり梱包・発送</p>
+      </div>
+    </div>
   </section>
 
   <footer>
-    <p>&copy; 2025 7TECH. All rights reserved.</p>
+    &copy; 2025 7TECH. All rights reserved.
   </footer>
 </body>
 </html>
